@@ -11,7 +11,7 @@ We're using a breakout board for the MPU 6050 called the GY-521 and this will se
 We're using a breakout board for the NEO6M V2 which will communicate with the ESP-32 via UART and the altitude, and position data will be logged onto the microSD card.
 
 ### The LoRa Radio Transceiver
-We're using Adafruit's breakout board for the RFM95W and directly connecting it to a patch antenna. I'm a little worried about the range, but it's hard to find a directional antenna that will allow our payload to stay within the weight constraints while also having a high enough range.
+We're using Adafruit's breakout board for the RFM95W and directly connecting it to a patch antenna. I'm a little worried about the range, but it's hard to find a directional antenna that will allow our payload to stay within the weight constraints while also having a high enough range. The idea is that the transceiver will, at intervals, chirp and return information for the signal strength, and we will use this to predict what sort of terrain below the sensor. Coupling this with the orientation, altitude, and position data, we hope to simulate an SAR sweep. The transceiver will communicate with the ESP-32 using one of its two SPIs.
 
 ## Acknowledgements
 Big thank you to Hack Club and the Apex organizers for giving us this amazing opportunity to run an experiment on a high-altitude balloon!
