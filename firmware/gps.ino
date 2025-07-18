@@ -1,4 +1,4 @@
-#include <TinyGPSPlus.h>
+/* #include <TinyGPSPlus.h>
 
 #define GPS_RX 16 
 #define GPS_TX 17 

@@ -1,5 +1,5 @@
 // uses VSPI on esp32, sd card on HSPI
-
+/*
 #include <SPI.h>
 #include <LoRa.h>
 
@@ -58,3 +58,4 @@ void loop() {
     isTransmitting = !isTransmitting;
   }
 }
+*/
